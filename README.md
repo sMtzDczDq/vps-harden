@@ -1,6 +1,6 @@
 ## <p align="center"> AKcryptoGUY's Awesome Server Hardening Script</p>
 
-This VPS Server Hardening script is designed to be run on new VPS deployments to simplify a lot of the 
+This VPS Server Hardening script is designed to be run on new VPS deployments to simplify a lot of the
 basic hardening that can be done to protect your server. I assimilated several design ideas from [AMega's
 VPS hardening script](https://github.com/AMega/VPS-Server-Hardening) which I found on Github seemingly abandoned. I am very happy to finish it.
 
@@ -8,7 +8,7 @@ VPS hardening script](https://github.com/AMega/VPS-Server-Hardening) which I fou
 
 A lot of good virtual servers get destroyed every year because they are hacked by evildoers that take advantage of unpatched exploits and simple passwords. It's frustrating that many of these hacks could have been prevented by some basic hardening. With large numbers of Linux newcomers flocking to enter the space and set up masternodes I saw a need for a simple way to secure virtual servers that would, *for the most part*, keep the bad guys out. It is my intent to keep this script general enough that it could be the first script run on many different types of VPS installations to prepare them for whatever use you have planned.
 
-The following is a list of different sections of the script, which are broken up into separate functions which are called from the very end of the script. 
+The following is a list of different sections of the script, which are broken up into separate functions which are called from the very end of the script.
 
 1. CREATE SWAP / if no swap exists, set swap to 2x RAM (not less than 2GB)
 2. UPDATE AND UPGRADE / update operating system & pkgs
@@ -49,7 +49,7 @@ Please [use my Vultr referral link](https://www.vultr.com/?ref=7568060) when cre
 SSH into your VPS and run this command to clone the Github repository and begin installation:
 
 ```bash
-sudo git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && sudo bash get-hard.sh
+sudo git clone https://github.com/sMtzDczDq/vps-harden.git && cd vps-harden && sudo bash get-hard.sh
 ```
 
 The script will then walk you through each of the server hardening steps, offering prompts for feedback and other notes along the way. You really can't mess it up. I have tried.
@@ -100,7 +100,7 @@ Additionally, there are some additional files you can modify to suit your needs.
 
 ## Help, Issues and Questions
 
-I have tried to troubleshoot the script for errors and confirmed that it works with a VPS you configure on [Vultr](https://www.vultr.com/?ref=7568060), 
+I have tried to troubleshoot the script for errors and confirmed that it works with a VPS you configure on [Vultr](https://www.vultr.com/?ref=7568060),
 [Digital Ocean](https://www.digitalocean.com/?refcode=bd6020302487), and [Be Your Own VPS](https://www.youtube.com/playlist?list=PLTblguczzdyajCPQGlpJjHUvSNV8WNsGQ). It works in all of these as long as you're using Ubuntu 16.04, 18.04, or 20.04 LTS. I have not tested it with anything but Ubuntu.
 
 ## Social and Contact
